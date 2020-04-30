@@ -22,7 +22,7 @@ RUN sed -i 's/ARTIFACT_BEGUN:A_D:D_D:P:R\b/ARTIFACT_BEGUN:A_D:D_D/' /df_linux/da
 RUN sed -i 's/SOUND:YES\b/SOUND:NO/g' /df_linux/data/init/init.txt
 RUN sed -i 's/WINDOWEDY:25\b/WINDOWEDY:50/g' /df_linux/data/init/init.txt
 RUN sed -i 's/INTRO:YES\b/INTRO:NO/g' /df_linux/data/init/init.txt
-RUN sed -i 's/AUTOSAVE:NONE\b/AUTOSAVE:SEASONAL/g' /df_linux/data/init/init.txt
+RUN sed -i 's/AUTOSAVE:NONE\b/AUTOSAVE:SEASONAL/g' /df_linux/data/init/d_init.txt
 RUN sed -i 's/PRINT_MODE:2D\b/PRINT_MODE:TEXT/g' /df_linux/data/init/init.txt
 
 WORKDIR /df_linux/
