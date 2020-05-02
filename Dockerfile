@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic
 MAINTAINER Zelop#3289 at Discord
 
 #Installing dependencies
