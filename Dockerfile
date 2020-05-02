@@ -8,7 +8,8 @@ RUN apt-get update -y && apt-get install -y libsdl-image1.2 libsdl-ttf2.0-0 libg
 RUN wget -q -O dwarff.tar.bz2 https://www.bay12games.com/dwarves/df_47_04_linux.tar.bz2 && tar -xvf dwarff.tar.bz2 && rm dwarff.tar.bz2
 
 #Download precompiled dfhack and extract
-RUN wget -q -O dfhack.zip https://github.com/Zelop/dfhack/releases/download/v0.1/dfhack.zip && unzip -o dfhack.zip && rm dfhack.zip
+#Replace dfhack-with-config.zip with dfhack.zip if you don't want to use the config menu.
+RUN wget -q -O dfhack.zip https://github.com/Zelop/dfhack/releases/download/v0.1/dfhack-with-config.zip && unzip -o dfhack.zip && rm dfhack.zip
 
 #Remove libstdc++ from df libs so it'll use the system one
 RUN mv /df_linux/libs/libstdc++.so.6 /df_linux/libs/libstdc++.so.6.backup
